@@ -1,0 +1,21 @@
+.list_style li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+.hover-list {
+  color: #f1f1f1;
+  transition: all 0.2s linear;
+}
+.hover-list:hover {
+  color: dodgerblue;
+}
+.footer-style-type h5 {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #888;
+}
+.round {
+  margin-top: 150px;
+  background-color: #2b3036ff;
+}

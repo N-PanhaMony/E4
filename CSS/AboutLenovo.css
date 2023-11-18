@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "god";
+  src: url("/Poppins/Poppins-Medium.ttf");
+}
+* {
+  font-family: "god";
+  font-weight: 600px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: url("/Laptop/background-body.jpg") fixed center; */
+  background-color: #161b22;
+}
+
+p {
+  color: #c6c7c9;
+}
+
+/* Navbar */
+.navbar_style {
+  color: #f9f9f9;
+  transition: all 0.5s ease;
+}
+.navbar_style:hover {
+  color: #2c62aeff;
+  text-decoration: underline;
+}
+
+
