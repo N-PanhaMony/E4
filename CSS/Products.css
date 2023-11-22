@@ -11,7 +11,7 @@
 }
 body {
   /* background: url("/Laptop/background-body.jpg") fixed center; */
-  background-color: #161b22;
+  background-color: #d9dcdfff;
 }
 
 p {
@@ -28,3 +28,113 @@ p {
   text-decoration: underline;
 }
 
+/* carousel-styling */
+.absolute-text-carousel {
+  padding: 20px 0 0 0;
+  text-align: start;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+  color: white;
+  margin: 0 auto;
+}
+
+/* product body */
+.product-body {
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+}
+
+/* card in carousel component */
+
+.card {
+  margin-bottom: 20px;
+}
+
+.community {
+  overflow: hidden;
+}
+
+.community img {
+  max-height: 241px;
+  min-height: 241px;
+  width: 100%;
+  object-fit: cover;
+  color: dark;
+}
+
+/* button in card */
+.carousel-control-prev {
+  width: 8%;
+  font-size: 35px;
+}
+.carousel-control-next {
+  width: 8%;
+  font-size: 35px;
+}
+
+/* accordion */
+.accordion .accordion-body {
+  background-color: #ededed;
+  font-size: small;
+}
+
+.accordion .accordion-body-2 {
+  background-color: #f9f9f9;
+  font-size: small;
+}
+
+.accordion .accordion-button {
+  box-shadow: none;
+  background-color: #ededed;
+  border-color: transparent;
+  color: #000;
+  border: 5px solid #ededed;
+  padding: 20px 20px 20px 20px;
+}
+
+.accordion .accordion-button-2 {
+  box-shadow: none;
+  background-color: #f9f9f9;
+  border-color: transparent;
+  color: #9b9b9bff;
+  border: 5px solid #f9f9f9;
+  padding: 20px 20px 20px 20px;
+}
+
+.style-2-img .card-body {
+  height: 25vh;
+}
+
+.style-2-img button {
+  position: absolute;
+  bottom: 0;
+}
+
+/* 8 card in a row */
+.style-8-img .card-body {
+  height: 25vh;
+}
+.style-8-img h3 {
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .style-8-img .card-body h6 {
+    font-size: 25px;
+  }
+  .style-8-img .card-body h3 {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+  }
+
+  .style-8-img .card-body {
+    font-size: 20px;
+  }
+}

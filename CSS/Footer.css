@@ -4,18 +4,35 @@ a {
   list-style-type: none;
 }
 .hover-list {
-  color: #f1f1f1;
+  color: #9b9b9bff;
   transition: all 0.2s linear;
 }
 .hover-list:hover {
   color: dodgerblue;
 }
-.footer-style-type h5 {
-  font-size: 20px;
+.list-unstyled h5 {
+  font-size: medium;
   font-weight: bold;
-  text-shadow: 2px 2px 10px #888;
+  color: #294e95;
 }
+
+.list-unstyled {
+  font-size: small;
+  margin-top: 10px;
+}
+
+.list-unstyled li {
+  font-size: small;
+}
+
 .round {
   margin-top: 150px;
-  background-color: #2b3036ff;
+  background-color: #ededed;
+  color: #9b9b9bff;
+}
+
+@media only screen and (max-width: 900px) {
+  .round {
+    text-align: center;
+  }
 }

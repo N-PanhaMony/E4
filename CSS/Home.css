@@ -11,7 +11,7 @@
 }
 body {
   /* background: url("/Laptop/background-body.jpg") fixed center; */
-  background-color: #161b22;
+  background-color: #c6c7c9ff;
 }
 
 p {
@@ -198,19 +198,39 @@ p {
 }
 
 /* card style */
+.community {
+  overflow: hidden;
+}
+
+.community .card-body {
+  height: 30vh;
+}
+
+.community button {
+  position: absolute;
+  bottom: 0;
+}
+
+.community img {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease;
+}
 
 .community-card {
   margin: 10px;
   padding: 30px;
   width: 50%;
-  background: rgba(0, 0, 0, 0.7);
+  background: #d9dcdfff;
   text-align: center;
 }
 
-.community {
-  width: 50%;
-  background: rgba(0, 0, 0, 0.7);
-  text-align: center;
+.community-card .button-hover {
+  color: #000;
+}
+.community-card .button-hover:hover {
+  background-color: #3498db;
 }
 
 .img-card {
@@ -221,24 +241,29 @@ p {
   margin-top: 100px;
 }
 
-.community {
-  overflow: hidden;
-}
-
-.community img {
-  cursor: pointer;
-  width: 100%;
-  height: auto;
-  transition: transform 1s ease;
-}
-
 .community:hover img {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 950px) {
+  .community .card-body{
+    height: 25vh;
+  }
+
+  .community h4,
+  p {
+    font-size: 25px;
+  }
+
+  .community p {
+    font-size: 20px;
+  }
+}
+
+/* hover community card */
 .progress-bar {
   width: 100%;
-  height: 3px;
+  height: 5px;
   background-color: #3498db;
   position: absolute;
   bottom: 0;
@@ -295,8 +320,9 @@ p {
 
 @media only screen and (max-width: 1200px) {
   .absolute-text-carousel {
+    background-color: #000;
     position: relative;
-    width: 85%;
+    width: 100%;
     transform: none;
     left: unset;
     top: unset;
@@ -305,8 +331,9 @@ p {
     font-size: 15px;
   }
   .absolute-text-carousel2 {
+    background-color: #000;
     position: relative;
-    width: 85%;
+    width: 100%;
     transform: none;
     left: unset;
     top: unset;
@@ -315,8 +342,9 @@ p {
     font-size: 15px;
   }
   .absolute-text-carousel3 {
+    background-color: #000;
     position: relative;
-    width: 85%;
+    width: 100%;
     transform: none;
     left: unset;
     top: unset;
@@ -347,5 +375,16 @@ a {
 }
 .round {
   margin-top: 150px;
-  background-color: #2b3036ff;
+  background-color: #ededed;
+  color: #000;
+}
+
+/* button of card of laptops and desktops */
+.carousel-control-prev {
+  width: 8%;
+  font-size: 35px;
+}
+.carousel-control-next {
+  width: 8%;
+  font-size: 35px;
 }
