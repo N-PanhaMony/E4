@@ -20,6 +20,17 @@
     <link rel="stylesheet" href="../CSS/Footer.css">
     <link rel="icon" type="image/x-icon" href="../Favicon/favicon_io/android-chrome-512x512.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .contentGG {
+            display: none;
+        }
+
+        .contentGG.active {
+            display: block;
+        }
+    </style>
+
 </head>
 
 <div>
@@ -40,9 +51,9 @@
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header" style="background-color: #040d21ff; color: #f9f9f9;">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                             <a href="/HTML/Home.html" class="px-3">
-                            <img src="../Photo/Lenovo_Logo.png" style="width: 150px;" alt="">
-                             </a>
+                            <a href="/HTML/Home.html" class="px-3">
+                                <img src="../Photo/Lenovo_Logo.png" style="width: 150px;" alt="">
+                            </a>
                         </h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close">
@@ -81,12 +92,336 @@
         </nav>
     </section>
 
+    <section>
+        <div id="carouselExampleIndicators2" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Photo/SolutionService/SS1.webp" alt="...">
+                    <div class="absolute-text-carousel">
+                        <p class="fs-4">Digital Workplace Solutions</p>
+                        <p class="carousel-item-text">Offer smart and flexible solutions that enable employees to focus
+                            on meaningful work and collaborate.
+                        </p>
+                        <div class="d-inline border-style-button">
+                            <button class="btn">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
 
-     <!-- Footer -->
-     <section>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Photo/SolutionService/SS2.webp" alt="...">
+                    <div class="absolute-text-carousel">
+                        <p class="fs-4">Digital Workplace Solutions</p>
+                        <p class="carousel-item-text">Offer smart and flexible solutions that enable employees to focus
+                            on meaningful work and collaborate.
+                        </p>
+                        <div class="d-inline border-style-button">
+                            <button class="btn">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Photo/SolutionService/SS3.webp" alt="...">
+                    <div class="absolute-text-carousel">
+                        <p class="fs-4">Lenovo TruScale</p>
+                        <p class="carousel-item-text">Move your organization forward with an everything-as-a-service
+                            solution. TruScale makes it easy to procure, deploy and manage IT innovation.
+                        </p>
+                        <div class="d-inline border-style-button">
+                            <button class="btn">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-block">
+                <button class="carousel-control-prev pb-5" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-circle-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="carousel-control-next pb-5" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- for text-linking -->
+    <section>
+        <div loading="lazy" style="background-color: #f4f4f4;">
+            <ul class="list-home-style px-5">
+                <li class="li-color" onclick="showContent('content1')">
+                    Solutions
+                </li>
+                <li class="li-color" onclick="showContent('content2')">
+                    TruScale
+                </li>
+                <li class="li-color" onclick="showContent('content3')">
+                    Services
+                </li>
+                <li class="li-color" onclick="showContent('content4')">
+                    Sustainability
+                </li>
+                <li class="li-color" onclick="showContent('content5')">
+                    Customer Stories
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="content">
+        <div id="content1" class="contentGG active">
+            <section class="container mt-5 third-style">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav1.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Hybrid Cloud</h5>
+                                <p class="card-text">Deploy a dynamic data storage solution built for scalability and
+                                    growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav2.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Sustainability </h5>
+                                <p class="card-text">Align your vision and outcomes with ESG goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav3.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Digital Workplace </h5>
+                                <p class="card-text">Create a better and more connected employee experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav4.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Industry Solutions </h5>
+                                <p class="card-text">Gain industry-specific solutions to your biggest challenges.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="content2" class="contentGG">
+            <section class="container mt-5 third-style">
+                <h1 class="mb-5 fw-bold">Resources</h1>
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav5.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Lenovo TruScale </h5>
+                                <p class="card-text">Simplify IT innovation with a fully integrated and scalable
+                                    solution delivered as a service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav6.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Device as a Service </h5>
+                                <p class="card-text">Deploy a cost-efficient solution for improving productivity, team
+                                    collaboration and business agility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav7.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Infrastructure as a Service </h5>
+                                <p class="card-text">Combine the security and control of an on-premises data center with
+                                    a cloud-like experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="content3" class="contentGG">
+            <section class="container mt-5 third-style">
+                <h1 class="mb-5 fw-bold">Resources</h1>
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav8.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Services for Home </h5>
+                                <p class="card-text">Enjoy peace of mind from a one-stop support solution for the care
+                                    and protection of your PCs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav9.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Services for Gaming </h5>
+                                <p class="card-text">Perform at you peak with assistance from gaming technicians who
+                                    help you optimize your settings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="content4" class="contentGG">
+            <section class="container mt-5 third-style">
+                <h1 class="mb-5 fw-bold">Resources</h1>
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav10.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Asset Recovery Services </h5>
+                                <p class="card-text">Easily manage your hardware’s lifecycle to minimize e-waste and
+                                    reach your sustainability goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav11.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">CO2 Offset Services </h5>
+                                <p class="card-text">Simplify the management of your carbon footprint to show your
+                                    commitment to sustainability.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav12.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Recertified </h5>
+                                <p class="card-text">Reduce your environmental impact with refurbished, repaired and
+                                    recertified equipment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="content5" class="contentGG">
+            <section class="container mt-5 third-style">
+                <h1 class="mb-5 fw-bold">Resources</h1>
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav13.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Bertelsmann </h5>
+                                <p class="card-text">Striving for climate-neutral operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav14.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Petco México </h5>
+                                <p class="card-text">Petco México: Pet care gets personal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/Nav15.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">Ohio University </h5>
+                                <p class="card-text">Making esports accessible to all.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="card" style="border: none;">
+                            <img src="/Photo/SolutionService/NAv16.webp" alt="...">
+                            <div class="card-body service-style">
+                                <h5 class="card-title fw-bold">ALSO Deutschland </h5>
+                                <p class="card-text">Fostering sustainability to bolster business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section class="container mt-5 card-togo">
+        <div class="row">
+            <div class="col-12 col-lg-4 col-md-4">
+                <a href="#">
+
+                    <div class="card">
+                        <img src="https://static.lenovo.com/ww/img/services/hp/support-warranty-lookup.jpg"
+                            style="width: 100%;" alt="">
+                        <div class="card-title m-0">
+                            <h4>Warranty Upgrade</h4>
+                            <p>
+                                Find the right warranty upgrade solution for your product.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4">
+                <a href="#">
+
+                    <div class="card">
+                        <img src="https://static.lenovo.com/ww/img/services/hp/support-forms.jpg" style=" width: 100%;"
+                            alt="">
+                        <div class="card-title m-0">
+                            <h4>Genuine Lenovo Parts</h4>
+                            <p>
+                                Find and purchase high-performance replacement parts.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4">
+                <a href="#">
+
+                    <div class="card">
+                        <img src="https://static.lenovo.com/ww/img/services/hp/support-customer-service.jpg"
+                            style="width: 100%;" alt="">
+                        <div class="card-title m-0">
+                            <h4>Support Customer Service</h4>
+                            <p>
+                                Can't find what you're looking? How can we help you?
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section>
         <div class="container-fluid p-4 text-lg-center round" id="go-footer">
             <div class="d-lg-flex justify-content-center align-items-center mb-5 gap-5">
-                <img src="../Photo/applestore.png" width="150px" alt="">
+                <a target="_blank" href="https://apps.apple.com/us/app/lenovo/id1398650553">
+                    <img src="../Photo/applestore.png" width="150px" alt="">
+                </a>
                 <div class="list-unstyled">
                     <ul class="list-inline icon-style">
                         <li class="list-inline-item fs-4">
@@ -121,7 +456,10 @@
                         </li>
                     </ul>
                 </div>
-                <img src="../Photo/googleplay.png" width="150px" height="60px">
+                <a target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.lenovo.serviceit&referrer=utm_source%3Decommerce-us-website">
+                    <img src="../Photo/googleplay.png" width="150px" alt="">
+                </a>
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-3">
@@ -224,7 +562,7 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
 
-    <script src="../Javascript/Toggle.js"></script>
+    <script src="/Javascript/SolutionService.js"></script>
     </body>
 
 </html>

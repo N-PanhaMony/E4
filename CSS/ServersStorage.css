@@ -11,11 +11,7 @@
 }
 body {
   /* background: url("/Laptop/background-body.jpg") fixed center; */
-  background-color: #161b22;
-}
-
-p {
-  color: #c6c7c9;
+  background-color: #ffffff;
 }
 
 /* Navbar */
@@ -28,3 +24,111 @@ p {
   text-decoration: underline;
 }
 
+/* carousel-styling */
+.carousel img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.absolute-text-carousel {
+  height: 100%;
+  width: 600px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.absolute-text-carousel .carousel-item-text {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .absolute-text-carousel {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
+    height: 250px;
+    transform: none;
+    left: unset;
+    top: unset;
+    padding: 2em 1em 1em;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+/* button in card */
+.border-style-button button {
+  border-color: #f9f9f9;
+}
+
+.carousel-control-prev {
+  width: 8%;
+  font-size: 40px;
+}
+.carousel-control-next {
+  width: 8%;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-control-prev {
+    width: 10%;
+    font-size: 30px;
+  }
+  .carousel-control-next {
+    width: 10%;
+    font-size: 30px;
+  }
+}
+
+/*  */
+.third-style a {
+  color: #3e8ddd;
+  font-weight: bolder;
+  transition: line-height 0.3s;
+}
+
+.third-style a:hover {
+  text-decoration: underline;
+  color: #3e8ddd;
+  font-weight: bolder;
+}
+
+.third-style .third-inside-style {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.third-style .third-inside-style p {
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+/* cards */
+
+.third-style .card-text {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.third-style .service-style {
+  height: 35vh;
+  background-color: #f4f4f4;
+}
+
+/* video */
+.video-style {
+  width: 100%;
+  height: 100%;
+}

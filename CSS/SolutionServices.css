@@ -11,11 +11,7 @@
 }
 body {
   /* background: url("/Laptop/background-body.jpg") fixed center; */
-  background-color: #161b22;
-}
-
-p {
-  color: #c6c7c9;
+  background-color: #ffffff;
 }
 
 /* Navbar */
@@ -28,4 +24,146 @@ p {
   text-decoration: underline;
 }
 
+/* carousel-styling */
+.carousel img {
+  height: 480px;
+  width: 100%;
+  object-fit: cover;
+}
 
+.absolute-text-carousel {
+  height: 100%;
+  width: 500px;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.absolute-text-carousel .carousel-item-text {
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+.absolute-text-carousel button {
+  background-color: #294e95;
+  color: #f9f9f9;
+}
+
+@media only screen and (max-width: 1000px) {
+  .absolute-text-carousel {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    transform: none;
+    left: unset;
+    top: unset;
+    padding: 2em 1em 1em;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+/* button in card */
+.border-style-button button {
+  border-color: #f9f9f9;
+}
+
+.carousel-control-prev {
+  width: 8%;
+  font-size: 40px;
+}
+.carousel-control-next {
+  width: 8%;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 550px) {
+  .carousel-control-prev {
+    width: 10%;
+    font-size: 30px;
+  }
+  .carousel-control-next {
+    width: 10%;
+    font-size: 30px;
+  }
+}
+
+/* other navbar */
+.list-home-style {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+}
+
+.li-color {
+  cursor: pointer;
+  color: #000;
+}
+
+.li-color:hover {
+  text-decoration: underline;
+}
+
+.li-color:active {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 750px) {
+  .list-home-style {
+    display: inline;
+    text-align: center;
+  }
+  .list-home-style .li-color {
+    padding: 15px;
+    border: none;
+  }
+}
+/* other navbar link difference cards */
+.contentGG .card {
+  margin-top: 20px;
+}
+
+.contentGG .card img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentGG .card .service-style {
+  height: 350px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contentGG .card .service-style .card-title {
+  height: 30px;
+  font-size: 18px;
+}
+.contentGG .card .service-style .card-text {
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+/* last content */
+.card-togo .card-title {
+  height: 10vh;
+  background-color: #213a80;
+  color: #f9f9f9;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-togo .card-title p {
+  font-size: 12px;
+}
