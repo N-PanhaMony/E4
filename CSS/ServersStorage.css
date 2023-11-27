@@ -26,14 +26,14 @@ body {
 
 /* carousel-styling */
 .carousel img {
-  height: 500px;
+  height: 480px;
   width: 100%;
   object-fit: cover;
 }
 
 .absolute-text-carousel {
   height: 100%;
-  width: 600px;
+  width: 500px;
   padding-top: 100px;
   padding-left: 100px;
   padding-right: 100px;
@@ -52,7 +52,7 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .absolute-text-carousel {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #000;
     position: relative;
     width: 100%;
     height: 250px;
@@ -79,7 +79,7 @@ body {
   font-size: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
   .carousel-control-prev {
     width: 10%;
     font-size: 30px;

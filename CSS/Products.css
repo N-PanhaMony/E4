@@ -66,16 +66,6 @@ p {
   color: dark;
 }
 
-/* button in card */
-.carousel-control-prev {
-  width: 8%;
-  font-size: 35px;
-}
-.carousel-control-next {
-  width: 8%;
-  font-size: 35px;
-}
-
 /* accordion */
 .accordion .accordion-body {
   text-align: start;
@@ -142,7 +132,7 @@ p {
   transform: scale(1.1);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 100px) {
   .style-8-img .card-body {
     font-size: 20px;
   }
@@ -152,7 +142,6 @@ p {
 .parentImg {
   display: flex;
   justify-content: center;
-  justify-items: center;
   align-items: center;
 }
 
@@ -177,7 +166,7 @@ p {
   text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .header-style {
     text-align: center;
   }
@@ -187,28 +176,62 @@ p {
 }
 
 /* carousel-styling */
-.absolute-text-carousel {
-  padding: 20px 0 0 0;
-  text-align: start;
-  width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(0%, -50%);
-  color: white;
-  margin: 0 auto;
+.carousel img {
+  height: 480px;
+  width: 100%;
+  object-fit: cover;
 }
 
-@media only screen and (max-width: 1200px) {
+.absolute-text-carousel {
+  height: 100%;
+  width: 500px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
   .absolute-text-carousel {
     background-color: #000;
     position: relative;
     width: 100%;
+    height: 250px;
     transform: none;
     left: unset;
     top: unset;
     padding: 2em 1em 1em;
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
+  }
+}
+
+/* button in card */
+.border-style-button button {
+  border-color: #f9f9f9;
+}
+
+.carousel-control-prev {
+  width: 8%;
+  font-size: 40px;
+}
+.carousel-control-next {
+  width: 8%;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 550px) {
+  .carousel-control-prev {
+    width: 10%;
+    font-size: 30px;
+  }
+  .carousel-control-next {
+    width: 10%;
+    font-size: 30px;
   }
 }
