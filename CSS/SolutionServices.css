@@ -128,7 +128,16 @@ body {
     border: none;
   }
 }
+
 /* other navbar link difference cards */
+.contentGG {
+  display: none;
+}
+
+.contentGG.active {
+  display: block;
+}
+
 .contentGG .card {
   margin-top: 20px;
 }
@@ -157,7 +166,7 @@ body {
 
 /* last content */
 .card-togo .card-title {
-  height: 10vh;
+  height: 12vh;
   background-color: #213a80;
   color: #f9f9f9;
   padding: 15px;

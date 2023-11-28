@@ -34,10 +34,25 @@ body {
 .absolute-text-carousel {
   height: 100%;
   width: 500px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.absolute-text-carousel3 {
+  height: 100%;
+  width: 500px;
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -47,7 +62,7 @@ body {
 }
 
 .absolute-text-carousel .carousel-item-text {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -55,13 +70,26 @@ body {
     background-color: #000;
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 300px;
     transform: none;
     left: unset;
     top: unset;
     padding: 2em 1em 1em;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  .absolute-text-carousel3 {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transform: none;
+    left: unset;
+    top: unset;
+    padding: 2em 1em 1em;
+    text-align: center;
+    font-size: 12px;
   }
 }
 

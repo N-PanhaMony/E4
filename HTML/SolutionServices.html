@@ -21,16 +21,6 @@
     <link rel="icon" type="image/x-icon" href="../Favicon/favicon_io/android-chrome-512x512.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <style>
-        .contentGG {
-            display: none;
-        }
-
-        .contentGG.active {
-            display: block;
-        }
-    </style>
-
 </head>
 
 <div>
@@ -62,8 +52,10 @@
                     <div class="offcanvas-body" style="background-color: #040d21ff; color: #f9f9f9;">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="/HTML/Products.html" class="nav-link navbar_style"
-                                    onclick="handleNavItemClick('home')">Products</a>
+                                <a href="/HTML/Products.html" class="nav-link navbar_style">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/HTML/Gaming.html" class="nav-link navbar_style">Gaming</a>
                             </li>
                             <li class="nav-item">
                                 <a href="/HTML/ServersStorage.html" class="nav-link navbar_style">Servers &
@@ -78,9 +70,6 @@
                             </li>
                             <li class="nav-item">
                                 <a href="/HTML/AboutLenovo.html" class="nav-link me-2 navbar_style">About Lenovo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/HTML/Deals.html" class="nav-link navbar_style">Deals</a>
                             </li>
                             <li class="nav-item">
                                 <a href="/HTML/SignIn.html" class="nav-link navbar_style">Sign-In </a>
@@ -156,19 +145,19 @@
     <section>
         <div loading="lazy" style="background-color: #f4f4f4;">
             <ul class="list-home-style px-5">
-                <li class="li-color" onclick="showContent('content1')">
+                <li class="nav-item li-color active" onclick="showContent('content1')">
                     Solutions
                 </li>
-                <li class="li-color" onclick="showContent('content2')">
+                <li class="nav-item li-color" onclick="showContent('content2')">
                     TruScale
                 </li>
-                <li class="li-color" onclick="showContent('content3')">
+                <li class="nav-item li-color" onclick="showContent('content3')">
                     Services
                 </li>
-                <li class="li-color" onclick="showContent('content4')">
+                <li class="nav-item li-color" onclick="showContent('content4')">
                     Sustainability
                 </li>
-                <li class="li-color" onclick="showContent('content5')">
+                <li class="nav-item li-color" onclick="showContent('content5')">
                     Customer Stories
                 </li>
             </ul>
@@ -220,7 +209,6 @@
         </div>
         <div id="content2" class="contentGG">
             <section class="container mt-5 third-style">
-                <h1 class="mb-5 fw-bold">Resources</h1>
                 <div class="row">
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="card" style="border: none;">
@@ -257,7 +245,6 @@
         </div>
         <div id="content3" class="contentGG">
             <section class="container mt-5 third-style">
-                <h1 class="mb-5 fw-bold">Resources</h1>
                 <div class="row">
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="card" style="border: none;">
@@ -284,7 +271,6 @@
         </div>
         <div id="content4" class="contentGG">
             <section class="container mt-5 third-style">
-                <h1 class="mb-5 fw-bold">Resources</h1>
                 <div class="row">
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="card" style="border: none;">
@@ -321,7 +307,6 @@
         </div>
         <div id="content5" class="contentGG">
             <section class="container mt-5 third-style">
-                <h1 class="mb-5 fw-bold">Resources</h1>
                 <div class="row">
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="card" style="border: none;">
@@ -373,7 +358,7 @@
                         <img src="https://static.lenovo.com/ww/img/services/hp/support-warranty-lookup.jpg"
                             style="width: 100%;" alt="">
                         <div class="card-title m-0">
-                            <h4>Warranty Upgrade</h4>
+                            <h5>Warranty Upgrade</h5>
                             <p>
                                 Find the right warranty upgrade solution for your product.
                             </p>
@@ -388,7 +373,7 @@
                         <img src="https://static.lenovo.com/ww/img/services/hp/support-forms.jpg" style=" width: 100%;"
                             alt="">
                         <div class="card-title m-0">
-                            <h4>Genuine Lenovo Parts</h4>
+                            <h5>Genuine Lenovo Parts</h5>
                             <p>
                                 Find and purchase high-performance replacement parts.
                             </p>
@@ -398,12 +383,11 @@
             </div>
             <div class="col-12 col-lg-4 col-md-4">
                 <a href="#">
-
                     <div class="card">
                         <img src="https://static.lenovo.com/ww/img/services/hp/support-customer-service.jpg"
                             style="width: 100%;" alt="">
                         <div class="card-title m-0">
-                            <h4>Support Customer Service</h4>
+                            <h5>Support Customer Service</h5>
                             <p>
                                 Can't find what you're looking? How can we help you?
                             </p>
