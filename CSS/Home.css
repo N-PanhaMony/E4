@@ -10,13 +10,10 @@
   box-sizing: border-box;
 }
 body {
-  /* background: url("/Laptop/background-body.jpg") fixed center; */
-  background-color: #c6c7c9ff;
   background: url("/Photo/backgroundHome.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  margin-bottom: 0px;
 }
 
 p {
@@ -391,4 +388,9 @@ a {
 .carousel-control-next {
   width: 8%;
   font-size: 35px;
+}
+
+/* last content of 3 cards */
+.last-content p {
+  color: #000;
 }
